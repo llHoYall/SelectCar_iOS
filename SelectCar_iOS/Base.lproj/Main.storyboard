@@ -22,13 +22,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tesla-model-s.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-hP-V2O">
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lamborghini-veneno.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-hP-V2O">
                                 <rect key="frame" x="39" y="388" width="297" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEm-lj-qWo">
-                                <rect key="frame" x="0.0" y="106" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="106" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="uRr-8G-pKH"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="U5S-NO-lR8"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qA-6G-cqc">
                                 <rect key="frame" x="131" y="34" width="112" height="30"/>
@@ -41,6 +45,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="carPickerView" destination="aEm-lj-qWo" id="M8B-Kd-BrN"/>
+                        <outlet property="imgView" destination="nmy-hP-V2O" id="uAI-GB-4le"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,6 +57,6 @@
     </scenes>
     <resources>
         <image name="background.jpeg" width="3264" height="2448"/>
-        <image name="tesla-model-s.jpg" width="1200" height="800"/>
+        <image name="lamborghini-veneno.jpg" width="1900" height="1267"/>
     </resources>
 </document>
